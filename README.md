@@ -39,6 +39,10 @@ https://github.com/wanghoufan/alw-003-curated-skill-open-source/tree/main/skills
 
 它针对**一个指定项目**，依据仓库里的实际情况核对项目介绍、网站链接和截图，再更新你指定的 GitHub 仓库、个人主页或作品集位置。不会编造功能，也不会把私有项目放到公开页面。
 
+![真实项目展示案例：生活物种项目的 GitHub Pages 首页、GitHub About 入口与 Vercel 地址](assets/showcase/github-project-showcase-result.png)
+
+*真实案例：来自公开项目 `p002-life-species-test`，截图和链接均按当前仓库与线上状态核验。*
+
 **适合**：项目收尾、校对项目介绍、核验作品集链接和截图。全账号作品盘点不属于这项 Skill。
 
 **怎么触发**
@@ -59,6 +63,10 @@ https://github.com/wanghoufan/alw-003-curated-skill-open-source/tree/main/skills
 
 它根据项目代码和实际运行信息维护 README、GitHub About 和 Release。带界面的产品会在 README 顶部展示真实截图：手机 App 的主要 Tab 并排放图；网页放首页和少量关键页面。Android 正式发布时核对签名 APK，并准备中英文更新说明。
 
+![真实 README 页面示例：蛋白质计算器 README 的标题、简介和三张并排产品截图](assets/showcase/github-readme-maintainer-result-card.png)
+
+*真实案例：直接截取公开项目 `p027-protein-calculator` 当前 GitHub README 的顶部区域。*
+
 **适合**：新建或更新 README、检查 GitHub About、整理产品截图、发布 Android APK 和双语 Release Notes。
 
 **怎么触发**
@@ -78,6 +86,10 @@ https://github.com/wanghoufan/alw-003-curated-skill-open-source/tree/main/skills
 > 同一个 Next.js 项目发布到 GitHub Pages 时，最容易踩的是项目子路径和静态导出的限制。
 
 它先检查项目能否静态导出，再处理 `basePath`、资源路径、动态路由和 Actions 发布。如果同时保留 Vercel，会区分两种部署配置，并分别核对线上结果。
+
+![真实 Next.js 双线部署示例：Vercel 动态站与 GitHub Pages 静态站的独立配置](assets/showcase/nextjs-github-pages-deploy-result.png)
+
+*真实案例：依据公开项目 `p002-life-species-test` 的 Next.js 配置、Pages 工作流和当前线上状态整理；这是配置关系图。*
 
 **适合**：把 Next.js 项目发布到 GitHub Pages、给 Vercel 站点增加 Pages 版本、排查白屏和资源 404。依赖服务器运行时的功能不能只靠静态导出保留。
 
