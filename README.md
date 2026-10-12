@@ -6,15 +6,15 @@
 
 这里不是把 Skill 攒在一起就算完成。每个入选项都要有明确用途、真实项目经验、可以照着走的步骤和清楚的安全边界。当前先以私有仓库整理与检查，许可证和公开范围确认后再开放。
 
-本仓库里的 Skill 采用 `SKILL.md` 结构，可供支持 Agent Skills 的工具读取；每个工具的具体安装方法取决于使用的智能体和它是否有权访问本私有仓库。
+本仓库里的 Skill 采用 `SKILL.md` 结构，可供支持 Agent Skills 的工具读取。`SKILL.md` 是中文主版本，英文版单独提供；安装方式取决于使用的智能体和它是否有权访问本私有仓库。
 
 ---
 
 ## 📋 目录
 
-| 名称 | 一句话 | 说明 |
-|---|---|---|
-| [github-project-showcase](skills/github-project-showcase/SKILL.md)（GitHub 项目展示同步） | 帮你把一个项目的 GitHub 仓库、个人主页或作品集介绍整理准确、链接验通、截图过隐私检查 | [使用说明](skills/github-project-showcase/SKILL.md) |
+| 名称 | 一句话 | 中文版 | English |
+|---|---|---|---|
+| `github-project-showcase`（GitHub 项目展示同步） | 帮你把一个项目的 GitHub 仓库、个人主页或作品集介绍整理准确、链接验通、截图过隐私检查 | [SKILL.md](skills/github-project-showcase/SKILL.md) | [SKILL.en.md](skills/github-project-showcase/SKILL.en.md) |
 
 ---
 
@@ -70,11 +70,12 @@ https://github.com/wanghoufan/alw-003-curated-skill-open-source/tree/main/skills
 
 #### 文件
 
-- [SKILL.md](skills/github-project-showcase/SKILL.md)：主流程和行为边界
-- [sync-flows.md](skills/github-project-showcase/sync-flows.md)：不同展示位置的同步步骤
-- [cover-rules.md](skills/github-project-showcase/cover-rules.md)：截图选择与隐私检查
-- [link-audit.md](skills/github-project-showcase/link-audit.md)：仓库、网站与 Release 链接核验
-- [checklist.md](skills/github-project-showcase/checklist.md)：交付前验收清单
+- [SKILL.md](skills/github-project-showcase/SKILL.md)：中文主版本，智能体默认读取
+- [SKILL.en.md](skills/github-project-showcase/SKILL.en.md)：英文对应版本
+- [sync-flows.md](skills/github-project-showcase/sync-flows.md) / [sync-flows.en.md](skills/github-project-showcase/sync-flows.en.md)：展示位置同步步骤
+- [cover-rules.md](skills/github-project-showcase/cover-rules.md) / [cover-rules.en.md](skills/github-project-showcase/cover-rules.en.md)：截图选择与隐私检查
+- [link-audit.md](skills/github-project-showcase/link-audit.md) / [link-audit.en.md](skills/github-project-showcase/link-audit.en.md)：仓库、网站与 Release 链接核验
+- [checklist.md](skills/github-project-showcase/checklist.md) / [checklist.en.md](skills/github-project-showcase/checklist.en.md)：交付前验收清单
 
 ---
 

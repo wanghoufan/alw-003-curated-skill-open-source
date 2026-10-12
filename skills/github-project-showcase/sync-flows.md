@@ -1,24 +1,24 @@
-# Destination workflows
+# 展示位置同步流程
 
-Use only the sections for destinations the user requested. Confirm exact repository names before running commands.
+只执行用户指定目标对应的小节。运行命令前确认仓库所有者与仓库名准确。
 
-## Project repository
+## 项目仓库
 
-Read the current README and GitHub About values. Verify links in the README against the repository and live site. If Android release assets are in scope, use the project's release policy and verify package identity, version, signature, and release notes; otherwise do not create a release.
+读取当前 README 和 GitHub About 值。对照项目文件和线上站点核实 README 中的链接。如果任务包含 Android Release 资产，遵循项目发布规范并核对应用标识、版本、签名和更新说明；否则不要创建 Release。
 
-## GitHub profile README
+## GitHub 个人主页 README
 
-A profile README is stored in a repository whose name matches its owner's GitHub login. Confirm the owner and repository before editing; do not guess based on a local account name.
+个人主页 README 位于与 GitHub 用户名同名的仓库中。编辑前确认用户名和仓库名，不要根据本机账号名称猜测。
 
-1. Read `README.md` and record its current SHA.
-2. Search for the target repository name. If present, update only the existing line; otherwise add one line in a user-approved category.
-3. Update any displayed project count only when the file has such a count and the new count can be verified.
-4. Write through the GitHub Contents API using the SHA read in step 1, then read back and compare the changed text.
+1. 读取当前 `README.md` 并记录文件 SHA。
+2. 搜索目标项目的仓库名。已有条目时只改该条；不存在时，只在用户确认的分类中新增。
+3. 文件中有项目总数时，仅在新条目确实新增且数字能核实时修改总数。
+4. 通过 GitHub Contents API 写入并带上第 1 步读取的 SHA；写后重新读取，比较修改文字。
 
-## Portfolio site
+## 作品集网站
 
-Locate the site's source data from the user or repository documentation. Prefer editing source data over generated pages. Match existing field names and style. Verify the project slug, title, summary, status, repository URL, live URL, release URL, and screenshot path against current facts. Keep existing ordering unless the site defines a clear ordering rule. Run the site's documented checks after edits.
+从用户或仓库说明定位站点内容源。优先改源数据，不改生成页面。依照既有字段填写 slug、标题、简介、状态、仓库链接、线上链接、Release 链接和截图路径；逐项按当前事实核对。遵循已有排序规则；若规则不明确，保留原顺序并询问。修改后运行站点文档规定的检查。
 
-## Commit and deployment
+## 提交与部署
 
-Check `git status`, current branch, remote, and diff before staging. Stage only the files changed for this task. Never use force push. Commit/push/deploy only when the user explicitly asked for it; then verify remote HEAD and deployment status. A successful push alone does not prove that a hosted site has finished deploying.
+暂存前检查 `git status`、当前分支、remote 和 diff。只暂存本次任务涉及的文件，禁止强制推送。只有用户明确要求时才提交、推送或部署；执行后核实远端 HEAD 和部署状态。推送成功本身不代表托管网站已完成部署。

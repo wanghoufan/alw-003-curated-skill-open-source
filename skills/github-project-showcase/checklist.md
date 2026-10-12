@@ -1,34 +1,34 @@
-# Delivery checklist
+# 交付检查清单
 
-## Project facts
+## 项目事实
 
-- [ ] The exact project repository or local path is confirmed.
-- [ ] Current visibility, fork status, default branch, and latest state are checked.
-- [ ] Each product claim is supported by current project material.
-- [ ] Private repositories and private project information are excluded from public destinations.
+- [ ] 已确认准确的项目目录或 GitHub 仓库。
+- [ ] 已检查仓库可见性、fork 状态、默认分支和最新状态。
+- [ ] 每个产品说法都有当前项目材料支持。
+- [ ] 公开展示中没有私有仓库或私人项目资料。
 
-## Destinations
+## 展示位置
 
-- [ ] Only destinations named by the user were inspected or changed.
-- [ ] Duplicate entries were checked before adding a new one.
-- [ ] Existing style, category, and ordering were followed or confirmed.
-- [ ] Changed remote content was read back and compared.
+- [ ] 只检查或修改用户指定的展示位置。
+- [ ] 新增前检查过是否已有重复条目。
+- [ ] 遵循了原有风格、分类和排序；不明确之处已向用户确认。
+- [ ] 已重新读取修改过的远端内容并核对。
 
-## Images and links
+## 图片与链接
 
-- [ ] Screenshots show the current real product and contain no private data.
-- [ ] Image rights and attribution were checked.
-- [ ] Repository, release, website, and image links were verified individually.
-- [ ] Unknown or unreachable items are labeled as unverified.
+- [ ] 截图来自当前真实产品，且不含私人资料。
+- [ ] 已检查图片使用权和署名要求。
+- [ ] 已逐项核验仓库、Release、网站和图片链接。
+- [ ] 无法核实的内容已标为未验证。
 
-## Git and deployment
+## Git 与部署
 
-- [ ] Only task-related files were staged.
-- [ ] The staged diff contains no credentials, private paths, or unrelated work.
-- [ ] Commit, push, release, or deployment occurred only when requested.
-- [ ] If deployed, the live result was checked after deployment completed.
+- [ ] 只暂存本次任务相关文件。
+- [ ] 暂存差异不含凭据、私人路径或无关改动。
+- [ ] 只有用户明确要求时才提交、推送、发版或部署。
+- [ ] 如果已部署，已在部署完成后检查线上结果。
 
-## Report
+## 报告
 
-- [ ] Changed files and destinations are listed.
-- [ ] Verification evidence and remaining gaps are reported accurately.
+- [ ] 列出了改动文件和展示位置。
+- [ ] 如实报告验证证据与未解决项。

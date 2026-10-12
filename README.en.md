@@ -6,15 +6,15 @@
 
 This is more than a folder of prompts. Every selected skill should solve a clear problem, come from real project use, provide actionable steps, and state its safety boundaries. The repository is private while its contents are being reviewed. Licensing and public release scope have not been decided.
 
-Skills use the `SKILL.md` format and can be read by tools that support Agent Skills. Installation depends on the agent and whether it has access to this private repository.
+Skills use the `SKILL.md` format and can be read by tools that support Agent Skills. The default `SKILL.md` is Chinese, with an English version beside it. Installation depends on the agent and whether it has access to this private repository.
 
 ---
 
 ## 📋 Contents
 
-| Name | In one sentence | Guide |
-|---|---|---|
-| [github-project-showcase](skills/github-project-showcase/SKILL.md) (GitHub Project Showcase Sync) | Keep a project's GitHub repository, profile entry, and portfolio listing accurate, verified, and privacy-safe. | [Instructions](skills/github-project-showcase/SKILL.md) |
+| Name | In one sentence | Chinese | English |
+|---|---|---|---|
+| `github-project-showcase` (GitHub Project Showcase Sync) | Keep a project's GitHub repository, profile entry, and portfolio listing accurate, verified, and privacy-safe. | [SKILL.md](skills/github-project-showcase/SKILL.md) | [SKILL.en.md](skills/github-project-showcase/SKILL.en.md) |
 
 ---
 
@@ -70,11 +70,11 @@ Add this project to my GitHub profile README, checking for duplicates first.
 
 #### Files
 
-- [SKILL.md](skills/github-project-showcase/SKILL.md): workflow and behavior boundaries
-- [sync-flows.md](skills/github-project-showcase/sync-flows.md): destination-specific steps
-- [cover-rules.md](skills/github-project-showcase/cover-rules.md): screenshot selection and privacy review
-- [link-audit.md](skills/github-project-showcase/link-audit.md): repository, website, and release link checks
-- [checklist.md](skills/github-project-showcase/checklist.md): delivery checklist
+- [SKILL.en.md](skills/github-project-showcase/SKILL.en.md): English workflow and behavior boundaries; [Chinese main version](skills/github-project-showcase/SKILL.md)
+- [sync-flows.en.md](skills/github-project-showcase/sync-flows.en.md): destination-specific steps; [Chinese version](skills/github-project-showcase/sync-flows.md)
+- [cover-rules.en.md](skills/github-project-showcase/cover-rules.en.md): screenshot selection and privacy review; [Chinese version](skills/github-project-showcase/cover-rules.md)
+- [link-audit.en.md](skills/github-project-showcase/link-audit.en.md): repository, website, and release link checks; [Chinese version](skills/github-project-showcase/link-audit.md)
+- [checklist.en.md](skills/github-project-showcase/checklist.en.md): delivery checklist; [Chinese version](skills/github-project-showcase/checklist.md)
 
 ---
 

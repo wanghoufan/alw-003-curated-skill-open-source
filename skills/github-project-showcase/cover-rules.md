@@ -1,30 +1,30 @@
-# Screenshot and privacy rules
+# 截图与隐私规则
 
-Use this reference when selecting product images for a repository README or portfolio entry.
+为项目仓库 README 或作品集条目选择产品图片时使用本说明。
 
-## Image selection
+## 图片选择
 
-1. Prefer a genuine screenshot from the current product version.
-2. If necessary, capture the real application in a clean demo or empty state that does not contain user data.
-3. Do not substitute a logo, app icon, mockup, concept design, decorative graphic, or error page for a product screenshot.
-4. If no genuine and safe image can be obtained, omit the image and tell the user why.
+1. 优先使用当前产品版本的真实运行截图。
+2. 必要时在干净的演示状态或空状态运行真实产品截图，避免带入用户资料。
+3. 不得用 Logo、应用图标、模型图、概念设计、装饰图片或报错页面代替真实产品截图。
+4. 找不到真实且安全的图片时，不放图并告诉用户原因。
 
-## Privacy and rights review
+## 隐私与素材授权检查
 
-Inspect every image at full size for:
+逐张检查原图，重点留意：
 
-- Names, faces, email addresses, phone numbers, chat messages, and precise locations.
-- Usernames, account IDs, device identifiers, terminal prompts, and local filesystem paths.
-- Customer, financial, medical, or other sensitive records.
-- Tokens, keys, passwords, QR codes, or scannable private data.
-- Third-party images, fonts, audio, or other materials that may require permission or attribution.
+- 姓名、人脸、邮箱、手机号、聊天内容和精确位置。
+- 用户名、账号 ID、设备标识、终端提示符和本地文件路径。
+- 客户、财务、医疗或其他敏感记录。
+- Token、密钥、密码、二维码及可扫描的私人数据。
+- 可能需要授权或署名的第三方图片、字体、音频等素材。
 
-Replace, crop, or redact a problematic image only when doing so will not make it misleading. Otherwise omit it. Never upload an original private image as a source for a public composite.
+只有在不造成误导的前提下才裁剪或脱敏。否则移除图片。不得把带有私人资料的原图上传后再制作公开拼图。
 
-## Presentation
+## 展示方式
 
-- Preserve the source image's aspect ratio; never stretch it.
-- For mobile screenshots, show a small, consistent set of key screens at readable dimensions instead of a long screenshot wall.
-- For websites, use the home page and only a few pages that explain important capabilities.
-- Prefer repository-hosted image files with descriptive names over fragile external image hosts.
-- Verify image links after publishing and confirm the displayed image corresponds to the current product.
+- 保持原始图片比例，不得拉伸。
+- 手机截图选少量关键页面并排展示，尺寸一致、文字可读；不要堆成长图墙。
+- 网页优先展示首页，按需补充少量能说明主要能力的页面。
+- 尽可能把图片放在仓库内，并使用清楚的文件名，避免不稳定的外链图床。
+- 发布后检查图片链接，并确认展示内容对应当前产品版本。

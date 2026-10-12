@@ -1,25 +1,25 @@
-# Link audit
+# 链接核验
 
-Check links before placing them in a public-facing README or portfolio.
+把链接放到公开 README 或作品集前，按本说明逐项核验。
 
-## Repository facts
+## 仓库信息
 
-Use authenticated GitHub metadata for a named repository:
+使用已认证的 GitHub CLI 查询指定仓库：
 
 ```bash
 gh api repos/OWNER/REPOSITORY --jq '[.full_name,.visibility,.fork,.default_branch,.pushed_at,.homepage]|@tsv'
 ```
 
-Confirm that the repository name is current, whether it is a fork, and whether it is public. A private repository must not be linked from a public listing.
+确认仓库名称是否为当前名称、是否 fork、是否公开。私有仓库不得放入公开展示列表。
 
-## Releases and websites
+## Release 与网站
 
-- Check that a release tag exists and includes the expected assets before linking to it.
-- `/releases/latest` may not resolve to a prerelease; use the specific tag page when needed.
-- Open the live project site and confirm it belongs to this project. Deployment configuration alone is not evidence of a live site.
-- A network timeout or proxy error is not the same as HTTP 404. Retry through another permitted method before declaring a link dead.
-- Prefer repository-hosted images over third-party image hosts when feasible.
+- 确认 Release 标签存在，且包含预期资产，再放下载链接。
+- `/releases/latest` 可能不指向预发布版；必要时使用具体标签页链接。
+- 打开线上项目并确认它确属该项目。仅有部署配置不能证明网站已上线。
+- 网络超时或代理错误不等于 HTTP 404。宣布死链前应换一种允许的方式复测。
+- 条件允许时优先使用仓库内的图片，少用第三方图床。
 
-## Report evidence
+## 报告证据
 
-For each link, report the exact URL and what was verified: HTTP status, page title, release tag, or asset name. Mark any checks that could not be completed.
+每个链接记录完整 URL 和核验结果，例如 HTTP 状态码、页面标题、Release 标签或资产名称。无法完成的检查要标为未验证。

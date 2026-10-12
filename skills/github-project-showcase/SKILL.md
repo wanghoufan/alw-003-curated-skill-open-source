@@ -1,75 +1,75 @@
 ---
 name: github-project-showcase
-description: Use when a developer wants to prepare or update the public presentation of one completed software project across its GitHub repository, profile README, or portfolio site. Verify project facts, links, screenshots, privacy, and consistency before changing only the targets the user names.
-compatibility: Requires Git and GitHub CLI (gh) for repository checks; optional portfolio-site tooling depends on the target project.
+description: 当用户要整理或更新一个已完成项目的 GitHub 展示、个人主页 README 或作品集页面时使用。先核验项目事实、链接、截图、隐私与内容一致性，再只修改用户指定的展示位置并验证结果。
+compatibility: 检查 GitHub 仓库需要 Git 和 GitHub CLI（gh）；作品集网站所需工具取决于目标项目。
 ---
 
-# GitHub Project Showcase
+# GitHub 项目展示同步
 
-Keep the presentation of one named project accurate across the locations the user requests. Work from the project's current files and live GitHub state. Do not invent features, links, deployment status, screenshots, or release assets.
+把用户指定的一个项目，准确地整理到用户要求的展示位置。依据项目当前文件和 GitHub 实际状态工作，不编造功能、链接、部署状态、截图或发行包。
 
-## When to use
+## 什么时候使用
 
-- The user asks to prepare a project for public presentation.
-- A project has changed and its repository README, profile listing, or portfolio entry needs to be synchronized.
-- A project link, screenshot, summary, or release link needs verification.
+- 用户要为一个项目准备对外展示。
+- 项目有更新，需要同步仓库 README、GitHub 个人主页或作品集条目。
+- 用户要核验项目链接、截图、简介或 Release 下载链接。
 
-Do not use this skill for a full account-wide portfolio audit, project management, or writing only one README. Keep the task limited to the one project named by the user.
+不要用本 Skill 做全账号作品盘点、项目管理，或只写单个 README。工作范围限定为用户点名的一个项目。
 
-## Rules
+## 执行规则
 
-1. **Verify before presenting.** Check the repository, fork status, default branch, latest changes, releases, and online destination as relevant. A local deployment configuration is not proof that a site is live.
-2. **Use source-backed wording.** Every feature, number, and product claim must be supported by the current README, source, docs, release notes, or information the user supplied. If unsupported, omit it or label it unverified.
-3. **Treat destinations as opt-in.** Update only the GitHub repository, profile README, and/or portfolio site named in the task. Do not infer the profile repository or portfolio source; ask for its location if needed.
-4. **Protect private work.** Never add a private repository or private project details to public-facing material. Do not change repository visibility.
-5. **Respect ownership and licenses.** Do not present a fork, upstream project, or third-party template as the user's original work. Check permissions for images, fonts, audio, and other assets.
-6. **Protect privacy.** Inspect screenshots and copied text for names, faces, contact details, locations, account identifiers, device IDs, customer data, financial or health data, credentials, and local paths. Replace or omit affected material.
-7. **Avoid duplicate entries.** Search the selected destination for the repository name or project slug before adding anything. Update an existing entry in place.
-8. **Keep changes narrow.** Do not edit unrelated repositories, account-wide lists, or unrelated portfolio entries. Do not delete useful material just to simplify the page.
-9. **Confirm before remote writes.** A remote edit, commit, push, release, or deployment must be within the user's explicit request. Never force-push or stage all files blindly.
+1. **先核验再展示。** 按任务需要检查仓库、fork 状态、默认分支、最近更新、Release 和线上地址。存在部署配置不代表网站已经上线。
+2. **介绍必须有依据。** 每个功能、数字和产品说法都要能从当前 README、代码、docs、Release Notes 或用户提供的信息中找到依据。无法核实就删除，或明确标为待核实。
+3. **展示位置由用户指定。** 只改用户要求的 GitHub 仓库、个人主页 README 和／或作品集网站。不得猜个人主页仓库或作品集内容源；缺少位置时询问用户。
+4. **保护私有项目。** 公开页面不得加入私有仓库或私有项目资料；不得擅自更改仓库可见性。
+5. **尊重作品归属和许可。** 不把 fork、上游项目或第三方模板说成用户原创。检查图片、字体、音频等素材的使用许可和署名要求。
+6. **保护隐私。** 检查截图和复制文字中是否包含姓名、人脸、联系方式、精确位置、账号标识、设备编号、客户资料、财务或健康信息、密钥及本地路径。发现问题就替换、脱敏或移除。
+7. **避免重复。** 新增前按仓库名或项目 slug 搜索目标页面；已存在时只更新差异。
+8. **控制改动范围。** 不顺手修改其他仓库、全账号列表或无关作品。不为简化页面擅自删掉有用内容。
+9. **远端写入要有明确授权。** 只有用户明确要求时才编辑远端、提交、推送、创建 Release 或部署。禁止强制推送和盲目暂存全部文件。
 
-## Workflow
+## 工作流程
 
-### 1. Identify and inspect the project
+### 1. 确认并检查项目
 
-Confirm the exact local directory or `OWNER/REPOSITORY`. Inspect its README, package/build configuration, screenshots, release notes, license, and current Git status. Check the remote, current branch, and recent commits. Do not expose secrets found during inspection.
+确认准确的本地目录或 `OWNER/REPOSITORY`。查看 README、依赖与构建配置、截图、Release Notes、许可证和当前 Git 状态；核实 remote、当前分支和近期提交。检查时发现的密钥不得复制到报告或文档。
 
-Build a short fact sheet: project name, purpose, audience, verified capabilities, current online links, release/download links, screenshots available, and known limitations. Separate verified facts from unknowns.
+整理简明事实表：项目名、用途、目标读者、已核实能力、当前线上链接、Release 下载地址、可用截图和已知限制。区分已核实事实与未知项。
 
-### 2. Check each requested destination
+### 2. 检查用户指定的展示位置
 
-Only inspect destinations the user requested:
+只检查用户要求的目标：
 
-- **Project repository:** current README and About fields; relevant release and deployment links.
-- **GitHub profile README:** identify the account from the user's instruction or authenticated context, then read the current file and look for this repository before editing.
-- **Portfolio site:** locate the content source from the user or the named site's repository instructions. Do not edit generated output if a source file exists.
+- **项目仓库：** 当前 README 和 About；必要时检查 Release 与部署链接。
+- **GitHub 个人主页 README：** 从用户指示或已认证上下文确认账号，读取当前文件，先按仓库名检查是否已有条目。
+- **作品集网站：** 从用户或该站点仓库说明中定位内容源。存在源文件时不要直接改生成产物。
 
-Before writing, summarize the exact files or fields that will change. For a remote destination, state the current and proposed values. Keep categories and ordering consistent with neighboring entries; ask the user when the category is not clear.
+写入前，说明将改动的确切文件或字段。修改远端元信息时，列明当前值和拟写入值。沿用相邻条目的分类与顺序；分类不明确时先问用户。
 
-### 3. Prepare accurate presentation material
+### 3. 准备准确的展示材料
 
-- Use a concise, source-backed summary focused on the value to a visitor.
-- Prefer a working GitHub Pages URL when verified; otherwise use a verified Vercel URL, then another verified project site. Do not include a dead or unconfirmed link.
-- Use a specific release tag URL if `/releases/latest` is unavailable or points to a prerelease.
-- For GUI and web products, use authentic screenshots of the current product. Follow `cover-rules.md`; if no safe, genuine screenshot is available, leave the image out and report the gap.
-- Keep the repository README, profile entry, and portfolio entry consistent without duplicating implementation details.
+- 简介简短、基于来源，重点说明对访客的价值。
+- 优先使用已核实可访问的 GitHub Pages；否则用已核实的 Vercel 地址，再否则选其他已核实的项目网站。不得放失效或未确认的链接。
+- `/releases/latest` 不可用或会指向预发布版本时，改用具体 Release 标签页。
+- GUI 或网页产品使用当前版本的真实截图。按 `cover-rules.md` 检查；没有安全、真实截图时先不放，并说明缺口。
+- 保持仓库 README、主页条目和作品集说明一致，不在介绍中堆实现细节。
 
-### 4. Edit only selected destinations
+### 4. 只修改选定的展示位置
 
-Update only the requested destination files or fields. Preserve useful existing content and surrounding style. For a GitHub profile README, use the GitHub Contents API with the current file SHA to avoid overwriting concurrent edits, then read the file back. For a portfolio site, edit its source data, update related tests if that project requires them, and use its documented build/deploy process only when requested.
+只改用户指定的目标文件或字段。保留有用内容并沿用原有风格。修改 GitHub 个人主页 README 时，使用 GitHub Contents API 和刚读取的文件 SHA 防止覆盖并发修改；写完后重新读取并比较。修改作品集时，编辑源数据；若目标项目要求测试，则同步更新相关检查，并且只在用户要求时运行部署流程。
 
-Before commit, inspect the exact staged diff and ensure it contains no unrelated changes, credentials, private paths, or personal data. Commit and push only when the user explicitly requested those actions.
+提交前检查准确的暂存差异，确认没有无关改动、凭据、私人路径或个人信息。只有用户明确要求时才提交和推送。
 
-### 5. Verify and report
+### 5. 验证并报告
 
-Read back every changed remote field or file. Check each updated URL and relevant image. If deployed, verify the deployed page after the deployment finishes; bypass cache when necessary. Report what changed, verification evidence, and anything still unverified. Do not claim a deployment or public release succeeded unless it was directly confirmed.
+回读每个已改的远端字段或文件，逐项核验更新的 URL 和图片。如果已部署，等待部署结束后检查线上页面；必要时绕过缓存。报告改动、验证证据和仍未验证的项目。没有实际验证就不得声称部署或公开发布成功。
 
-## Output
+## 输出
 
-Provide a short report with:
+简要报告：
 
-- Project and destinations checked.
-- Files or fields changed.
-- Link, image, and deployment checks performed.
-- Commit/push/deployment status, only when applicable.
-- Remaining gaps or decisions.
+- 检查了哪个项目和哪些展示位置。
+- 修改了哪些文件或字段。
+- 做过哪些链接、图片和部署检查。
+- 提交、推送、部署状态（仅在适用时）。
+- 尚未解决的缺口或待决定事项。
