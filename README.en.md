@@ -107,4 +107,4 @@ The Pages site is blank. Check basePath, routes, and asset paths.
 
 ## About
 
-This is a personally maintained collection. The repository is public and has no license yet; the scope and redistribution terms of each skill will keep being reviewed.
+This is a personally maintained collection. The repository is public and its content is offered under the [MIT License](LICENSE); the scope of each skill will keep being reviewed.
