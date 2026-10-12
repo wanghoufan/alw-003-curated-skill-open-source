@@ -10,9 +10,9 @@
 
 | 名称 | 一句话 | 讲解 |
 |---|---|---|
-| [github-project-showcase（GitHub 项目展示同步）](skills/github-project-showcase) | 同步一个项目的仓库、个人主页与作品集展示 | — |
-| [github-readme-maintainer（GitHub README 维护）](skills/github-readme-maintainer) | 写好 README、真实产品截图、About 和双语 Release 说明 | — |
-| [nextjs-github-pages-deploy（Next.js 部署 GitHub Pages）](skills/nextjs-github-pages-deploy) | 部署 Next.js 项目页，处理子路径和 Vercel 双线发布 | — |
+| [github-project-showcase（GitHub 项目展示同步）](skills/github-project-showcase) | 项目做完后，统一 GitHub 仓库、个人主页和作品集里的项目介绍、链接与截图。 | — |
+| [github-readme-maintainer（GitHub README 维护）](skills/github-readme-maintainer) | 把 GitHub 项目介绍和使用说明写清楚，配上真实界面图；Android 发版时整理安装包和双语更新说明。 | — |
+| [nextjs-github-pages-deploy（Next.js 部署 GitHub Pages）](skills/nextjs-github-pages-deploy) | 把 Next.js 网站发布到 GitHub Pages；保留 Vercel 时同时维护两个版本，并排查白屏或资源打不开。 | — |
 
 ## 📦 怎么安装
 

@@ -10,9 +10,9 @@ Each skill has been tried on a concrete task before being adapted into instructi
 
 | Name | In one sentence | Guide |
 |---|---|---|
-| [github-project-showcase（GitHub 项目展示同步）](skills/github-project-showcase) | Keep one project's repository, profile, and portfolio presentation in sync | — |
-| [github-readme-maintainer（GitHub README 维护）](skills/github-readme-maintainer) | Improve the README, genuine product screenshots, About metadata, and bilingual release notes | — |
-| [nextjs-github-pages-deploy（Next.js 部署 GitHub Pages）](skills/nextjs-github-pages-deploy) | Deploy a Next.js project site with correct subpaths and optional Vercel dual deployment | — |
+| [github-project-showcase（GitHub 项目展示同步）](skills/github-project-showcase) | After a project is finished, align its description, links, and screenshots across its GitHub repo, profile, and portfolio. | — |
+| [github-readme-maintainer（GitHub README 维护）](skills/github-readme-maintainer) | Write clear project and setup docs for GitHub, add real product screenshots, and prepare Android packages and bilingual release notes. | — |
+| [nextjs-github-pages-deploy（Next.js 部署 GitHub Pages）](skills/nextjs-github-pages-deploy) | Publish a Next.js website on GitHub Pages; keep its Vercel version too and fix blank pages or broken assets. | — |
 
 ## 📦 Install
 
