@@ -8,29 +8,13 @@ Each skill has been tried on a concrete task before being adapted into instructi
 
 ---
 
-## 📋 Curated Skills
+## 📋 Contents
 
-### github-project-showcase（GitHub 项目展示同步）
-
-At project wrap-up, align its description, links, and screenshots across the GitHub repository, profile, and portfolio.
-
-[Read the skill and trigger examples](skills/github-project-showcase/SKILL.en.md)
-
----
-
-### github-readme-maintainer（GitHub README 维护）
-
-Maintain the README, product screenshots, and GitHub Releases from verified project details; prepare APKs and bilingual release notes for Android releases.
-
-[Read the skill and trigger examples](skills/github-readme-maintainer/SKILL.en.md)
-
----
-
-### nextjs-github-pages-deploy（Next.js 部署 GitHub Pages）
-
-Deploy a Next.js project to GitHub Pages, handle project subpaths and static assets, and maintain a Vercel version when needed.
-
-[Read the skill and trigger examples](skills/nextjs-github-pages-deploy/SKILL.en.md)
+| Name | In one sentence |
+|---|---|
+| [github-project-showcase（GitHub 项目展示同步）](skills/github-project-showcase/SKILL.en.md) | At project wrap-up, align its description, links, and screenshots across the repository, profile, and portfolio. |
+| [github-readme-maintainer（GitHub README 维护）](skills/github-readme-maintainer/SKILL.en.md) | Maintain the README, product screenshots, and Releases; prepare APKs and bilingual notes for Android releases. |
+| [nextjs-github-pages-deploy（Next.js 部署 GitHub Pages）](skills/nextjs-github-pages-deploy/SKILL.en.md) | Deploy Next.js to GitHub Pages, handle subpaths and assets, and keep Vercel when needed. |
 
 ---
 

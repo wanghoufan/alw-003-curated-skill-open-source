@@ -8,29 +8,13 @@
 
 ---
 
-## 📋 精选 Skills
+## 📋 目录
 
-### github-project-showcase（GitHub 项目展示同步）
-
-项目收尾时，核对并同步 GitHub 仓库、个人主页和作品集中的项目介绍、链接与截图。
-
-[查看 Skill 说明与触发示例](skills/github-project-showcase/SKILL.md)
-
----
-
-### github-readme-maintainer（GitHub README 维护）
-
-根据项目实际情况维护 README、产品截图和 GitHub Release；Android 发版时整理 APK 与中英文更新说明。
-
-[查看 Skill 说明与触发示例](skills/github-readme-maintainer/SKILL.md)
-
----
-
-### nextjs-github-pages-deploy（Next.js 部署 GitHub Pages）
-
-部署 Next.js 项目到 GitHub Pages，处理项目子路径和静态资源；需要时同步维护 Vercel 版本。
-
-[查看 Skill 说明与触发示例](skills/nextjs-github-pages-deploy/SKILL.md)
+| 名称 | 一句话 |
+|---|---|
+| [github-project-showcase（GitHub 项目展示同步）](skills/github-project-showcase/SKILL.md) | 项目收尾时，同步 GitHub 仓库、个人主页和作品集中的项目介绍、链接与截图。 |
+| [github-readme-maintainer（GitHub README 维护）](skills/github-readme-maintainer/SKILL.md) | 维护 README、产品截图和 Release；Android 发版时整理 APK 与中英文更新说明。 |
+| [nextjs-github-pages-deploy（Next.js 部署 GitHub Pages）](skills/nextjs-github-pages-deploy/SKILL.md) | 部署 Next.js 到 GitHub Pages，处理子路径和静态资源，需要时兼顾 Vercel。 |
 
 ---
 
@@ -47,7 +31,7 @@ https://github.com/wanghoufan/alw-003-curated-skill-open-source/tree/main/skills
 
 ---
 
-## ✨ Skill 介绍
+## ✨ Skills
 
 ### 🧭 github-project-showcase（GitHub 项目展示同步）
 
