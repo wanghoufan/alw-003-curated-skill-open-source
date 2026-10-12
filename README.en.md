@@ -10,10 +10,10 @@ This repository is **Private** and still under review. Each entry shows only its
 
 | Skill | Purpose | Link |
 |---|---|---|
-| `github-project-showcase` | Keep one project's repository, profile, and portfolio presentation in sync | [View skill](skills/github-project-showcase/SKILL.en.md) |
-| `github-readme-maintainer` | Write and maintain project READMEs, About metadata, and bilingual release notes | [View skill](skills/github-readme-maintainer/SKILL.en.md) |
-| `nextjs-github-pages-deploy` | Deploy Next.js projects to GitHub Pages, including dual deployment with Vercel | [View skill](skills/nextjs-github-pages-deploy/SKILL.en.md) |
-| `vercel-deploy-triage` | Diagnose blocked Vercel deployments or stale live sites | [View skill](skills/vercel-deploy-triage/SKILL.en.md) |
+| `github-project-showcase`（GitHub 项目展示同步） | Keep one project's repository, profile, and portfolio presentation in sync | [View skill](skills/github-project-showcase/SKILL.en.md) |
+| `github-readme-maintainer`（GitHub README 维护） | Write and maintain project READMEs, About metadata, and bilingual release notes | [View skill](skills/github-readme-maintainer/SKILL.en.md) |
+| `nextjs-github-pages-deploy`（Next.js 部署 GitHub Pages） | Deploy Next.js projects to GitHub Pages, including dual deployment with Vercel | [View skill](skills/nextjs-github-pages-deploy/SKILL.en.md) |
+| `vercel-deploy-triage`（Vercel 部署故障诊断） | Diagnose blocked Vercel deployments or stale live sites | [View skill](skills/vercel-deploy-triage/SKILL.en.md) |
 
 ## Use
 

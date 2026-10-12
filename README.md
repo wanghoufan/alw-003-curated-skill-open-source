@@ -10,10 +10,10 @@
 
 | Skill | 用途 | 入口 |
 |---|---|---|
-| `github-project-showcase` | 同步一个项目的仓库、主页与作品集展示 | [查看 Skill](skills/github-project-showcase/SKILL.md) |
-| `github-readme-maintainer` | 编写和维护项目 README、About 与双语 Release 说明 | [查看 Skill](skills/github-readme-maintainer/SKILL.md) |
-| `nextjs-github-pages-deploy` | 将 Next.js 项目部署到 GitHub Pages，支持与 Vercel 双线发布 | [查看 Skill](skills/nextjs-github-pages-deploy/SKILL.md) |
-| `vercel-deploy-triage` | 诊断 Vercel 部署受阻或线上未更新 | [查看 Skill](skills/vercel-deploy-triage/SKILL.md) |
+| `github-project-showcase`（GitHub 项目展示同步） | 同步一个项目的仓库、主页与作品集展示 | [查看 Skill](skills/github-project-showcase/SKILL.md) |
+| `github-readme-maintainer`（GitHub README 维护） | 编写和维护项目 README、About 与双语 Release 说明 | [查看 Skill](skills/github-readme-maintainer/SKILL.md) |
+| `nextjs-github-pages-deploy`（Next.js 部署 GitHub Pages） | 将 Next.js 项目部署到 GitHub Pages，支持与 Vercel 双线发布 | [查看 Skill](skills/nextjs-github-pages-deploy/SKILL.md) |
+| `vercel-deploy-triage`（Vercel 部署故障诊断） | 诊断 Vercel 部署受阻或线上未更新 | [查看 Skill](skills/vercel-deploy-triage/SKILL.md) |
 
 ## 使用
 
