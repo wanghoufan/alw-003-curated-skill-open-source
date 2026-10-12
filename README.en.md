@@ -12,7 +12,7 @@ Each skill has been tried on a concrete task before being adapted into instructi
 
 | Name | In one sentence |
 |---|---|
-| [github-project-showcase（GitHub 项目展示同步）](skills/github-project-showcase/SKILL.en.md) | At project wrap-up, align its description, links, and screenshots across the repository, profile, and portfolio. |
+| [github-project-showcase（GitHub 项目展示同步）](skills/github-project-showcase/SKILL.en.md) | At project wrap-up, align descriptions, links, and screenshots across the repository, bilingual profile, and portfolio. |
 | [github-readme-maintainer（GitHub README 维护）](skills/github-readme-maintainer/SKILL.en.md) | Maintain the README, product screenshots, and Releases; prepare APKs and bilingual notes for Android releases. |
 | [nextjs-github-pages-deploy（Next.js 部署 GitHub Pages）](skills/nextjs-github-pages-deploy/SKILL.en.md) | Deploy Next.js to GitHub Pages, handle subpaths and assets, and keep Vercel when needed. |
 
@@ -37,7 +37,7 @@ Replace the folder name with the skill you want. Because this repository is priv
 
 > When a project is ready, its repository and portfolio descriptions should be in sync too.
 
-This skill prepares **one named project** for presentation. It checks repository facts, links, and screenshots, then updates only the GitHub repository, profile, or portfolio destinations you specify. It does not invent features or put a private project on a public page.
+This skill prepares **one named project** for presentation. It checks repository facts, links, and screenshots, then updates only the GitHub repository, bilingual profile, or portfolio destinations you specify. When Chinese and English profile READMEs both exist, it keeps their project lists and categories aligned and runs a read-only check. It does not invent features or put a private project on a public page.
 
 ![Real project showcase: the Life Species GitHub Pages home page, GitHub About entry, and Vercel URL](assets/showcase/github-project-showcase-result.en.png)
 

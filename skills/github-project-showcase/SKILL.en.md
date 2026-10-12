@@ -41,7 +41,7 @@ Build a short fact sheet: project name, purpose, audience, verified capabilities
 Only inspect destinations the user requested:
 
 - **Project repository:** current README and About fields; relevant release and deployment links.
-- **GitHub profile README:** identify the account from the user's instruction or authenticated context, then read the current file and look for this repository before editing.
+- **GitHub profile README:** identify the account from the user's instruction or authenticated context, then read the current file and look for this repository before editing. If both `README.md` and `README.en.md` exist, maintain them as bilingual views of one project list: the project set, links, category order, and counts must match. Update and read back both files, then run `scripts/parity_check.py` until it reports `PARITY-OK`.
 - **Portfolio site:** locate the content source from the user or the named site's repository instructions. Do not edit generated output if a source file exists.
 
 Before writing, summarize the exact files or fields that will change. For a remote destination, state the current and proposed values. Keep categories and ordering consistent with neighboring entries; ask the user when the category is not clear.
@@ -49,6 +49,7 @@ Before writing, summarize the exact files or fields that will change. For a remo
 ### 3. Prepare accurate presentation material
 
 - Use a concise, source-backed summary focused on the value to a visitor.
+- If the profile has Chinese and English READMEs, translate only the wording; do not change the project set, links, category order, or counts. Follow the bilingual workflow in `sync-flows.en.md` and run the read-only checker.
 - Prefer a working GitHub Pages URL when verified; otherwise use a verified Vercel URL, then another verified project site. Do not include a dead or unconfirmed link.
 - Use a specific release tag URL if `/releases/latest` is unavailable or points to a prerelease.
 - For GUI and web products, use authentic screenshots of the current product. Follow `cover-rules.en.md`; if no safe, genuine screenshot is available, leave the image out and report the gap.
@@ -81,3 +82,8 @@ This project is wrapping up. Sync its repository description and portfolio entry
 Check whether this GitHub repository's description, links, and screenshots are accurate.
 Add this project to my GitHub profile README, checking for duplicates first.
 ```
+
+## Bundled files
+
+- `sync-flows.en.md`: detailed bilingual profile and other destination workflows.
+- `scripts/parity_check.py`: read-only check for project sets, link paths, category order, counts, duplicates, and reciprocal links. Skip it when there is no English README; never create one without the user's request.

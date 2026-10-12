@@ -12,7 +12,7 @@
 
 | 名称 | 一句话 |
 |---|---|
-| [github-project-showcase（GitHub 项目展示同步）](skills/github-project-showcase/SKILL.md) | 项目收尾时，同步 GitHub 仓库、个人主页和作品集中的项目介绍、链接与截图。 |
+| [github-project-showcase（GitHub 项目展示同步）](skills/github-project-showcase/SKILL.md) | 项目收尾时，同步仓库、双语个人主页和作品集中的项目介绍、链接与截图。 |
 | [github-readme-maintainer（GitHub README 维护）](skills/github-readme-maintainer/SKILL.md) | 维护 README、产品截图和 Release；Android 发版时整理 APK 与中英文更新说明。 |
 | [nextjs-github-pages-deploy（Next.js 部署 GitHub Pages）](skills/nextjs-github-pages-deploy/SKILL.md) | 部署 Next.js 到 GitHub Pages，处理子路径和静态资源，需要时兼顾 Vercel。 |
 
@@ -37,7 +37,7 @@ https://github.com/wanghoufan/alw-003-curated-skill-open-source/tree/main/skills
 
 > 一个项目做完了，仓库和作品集上的介绍也要跟着对齐。
 
-它针对**一个指定项目**，依据仓库里的实际情况核对项目介绍、网站链接和截图，再更新你指定的 GitHub 仓库、个人主页或作品集位置。不会编造功能，也不会把私有项目放到公开页面。
+它针对**一个指定项目**，依据仓库里的实际情况核对项目介绍、网站链接和截图，再更新你指定的 GitHub 仓库、双语个人主页或作品集位置。个人主页有中英文两份 README 时，会保持项目清单和分类一致并运行只读校验。不会编造功能，也不会把私有项目放到公开页面。
 
 ![真实项目展示案例：生活物种项目的 GitHub Pages 首页、GitHub About 入口与 Vercel 地址](assets/showcase/github-project-showcase-result.png)
 

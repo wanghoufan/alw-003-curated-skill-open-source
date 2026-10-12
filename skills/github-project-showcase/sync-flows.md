@@ -15,6 +15,23 @@
 3. 文件中有项目总数时，仅在新条目确实新增且数字能核实时修改总数。
 4. 通过 GitHub Contents API 写入并带上第 1 步读取的 SHA；写后重新读取，比较修改文字。
 
+### 双语个人主页 README
+
+如果个人主页仓库同时有 `README.md` 和 `README.en.md`，将其作为同一份项目清单的两个语言视图。分别通过 Contents API 读取两份文件；`readme` 端点只返回 GitHub 默认展示的文件。记录两份各自的 SHA，并在写入前分别查找目标项目。
+
+- 两份文件的项目集合、目标链接、分类数量与顺序、分类小计和总数必须一致。可以翻译说明文字，但不得增删项目。
+- 每份文件都使用各自最新 SHA 写入，随后重新读取验证；如果 SHA 变化，先重新读取并合并并发修改，不能覆盖。
+- 修改任意一份后都运行只读校验：
+
+  ```bash
+  python3 <skill-directory>/scripts/parity_check.py --owner <github-login>
+  # 有本地副本时可离线检查：
+  python3 <skill-directory>/scripts/parity_check.py --owner <github-login> --readme <workspace>/README.md --readme-en <workspace>/README.en.md
+  ```
+
+- 若输出 `PARITY-DRIFT`，在本次任务范围内修复并重跑到 `PARITY-OK`。无关条目已有漂移时单独报告，不顺手重写。
+- 如果没有 `README.en.md`，除非用户要求创建英文主页，否则不要新建；此时校验脚本不适用。
+
 ## 作品集网站
 
 从用户或仓库说明定位站点内容源。优先改源数据，不改生成页面。依照既有字段填写 slug、标题、简介、状态、仓库链接、线上链接、Release 链接和截图路径；逐项按当前事实核对。遵循已有排序规则；若规则不明确，保留原顺序并询问。修改后运行站点文档规定的检查。
