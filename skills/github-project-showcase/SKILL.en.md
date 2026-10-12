@@ -73,3 +73,11 @@ Provide a short report with:
 - Link, image, and deployment checks performed.
 - Commit/push/deployment status, only when applicable.
 - Remaining gaps or decisions.
+
+## How to trigger it
+
+```text
+This project is wrapping up. Sync its repository description and portfolio entry.
+Check whether this GitHub repository's description, links, and screenshots are accurate.
+Add this project to my GitHub profile README, checking for duplicates first.
+```

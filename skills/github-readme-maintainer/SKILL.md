@@ -85,3 +85,10 @@ metadata:
 为这个 Android 版本准备 GitHub Release，上传签名 APK，并写中英文更新说明。
 检查 GitHub About 的 Website 是否应使用 GitHub Pages。
 ```
+## 怎么触发
+
+```text
+根据当前代码整理中英文 README，顶部放真实产品截图。
+准备这个 Android 版本的 GitHub Release，上传签名 APK 并写中英文更新说明。
+检查仓库 About 的 Website 是否应该优先用 GitHub Pages。
+```

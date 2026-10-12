@@ -63,3 +63,10 @@ const nextConfig = {
 - 不把秘密写进前端、仓库或 Actions 日志；使用平台提供的 secrets，并区分构建时公开变量与服务端秘密。
 - 不更改仓库可见性、域名、生产数据或线上架构，除非用户明确授权。
 - 推送或部署仅按用户指示执行；完成后核对线上实际页面，而不只报告构建成功。
+## 怎么触发
+
+```text
+帮我把这个 Next.js 项目部署到 GitHub Pages。
+保留 Vercel，再增加 GitHub Pages 部署。
+Pages 上白屏了，检查 basePath 和静态资源路径。
+```

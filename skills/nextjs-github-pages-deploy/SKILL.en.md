@@ -63,3 +63,10 @@ Set repository-specific values for the target. Do not copy another project's nam
 - Never expose secrets in client code, the repository, or Actions logs. Use platform secrets and distinguish public build variables from server-only secrets.
 - Do not change repository visibility, domains, production data, or deployment architecture without explicit authorization.
 - Push and deploy only as directed by the user. Verify the actual live page after deployment instead of treating a successful build as proof.
+## How to trigger it
+
+```text
+Deploy this Next.js project to GitHub Pages.
+Keep Vercel and add a GitHub Pages deployment.
+The Pages site is blank; check basePath and static asset paths.
+```

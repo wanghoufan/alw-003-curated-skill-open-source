@@ -51,3 +51,10 @@ CLI options can change by version. Check `vercel --help` or current official CLI
 ## Completion criteria
 
 Report the cause (or unconfirmed hypothesis), evidence, changes made, deployment ID/commit, live verification result, and remaining risks. A successful build alone does not prove the production site was updated.
+## How to trigger it
+
+```text
+The Vercel deployment is BLOCKED. Find the cause first.
+The deploy succeeded but the live site is stale. Check production.
+GitHub cannot associate the commit author with an account. Check the Vercel integration.
+```
