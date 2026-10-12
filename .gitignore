@@ -43,3 +43,6 @@ secrets.*
 # 系统文件
 .DS_Store
 Thumbs.db
+
+# Project Steward local machine identity (do not publish local paths)
+.project.yaml
