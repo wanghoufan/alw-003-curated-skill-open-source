@@ -1,0 +1,13 @@
+# 项目机器身份 — 由 Project Steward 生成，请勿删除
+project_id: ALW-003
+name_zh: 精选 Skill 开源仓库
+slug: curated-skill-open-source
+status: active
+github: wanghoufan/alw-003-curated-skill-open-source
+visibility: public
+created_at: 2026-10-12T14:16:43+08:00
+local_path: /Users/zzymima0000/Developer/coding/1.Active/alw-003-精选 Skill 开源仓库
+default_branch: main
+repo_role: primary
+lifecycle: active, paused, archived
+project_type: resident
