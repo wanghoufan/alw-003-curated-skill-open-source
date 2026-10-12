@@ -13,7 +13,6 @@ Each skill has been tried on a concrete task before being adapted into instructi
 | [github-project-showcase（GitHub 项目展示同步）](skills/github-project-showcase) | Keep one project's repository, profile, and portfolio presentation in sync | — |
 | [github-readme-maintainer（GitHub README 维护）](skills/github-readme-maintainer) | Improve the README, genuine product screenshots, About metadata, and bilingual release notes | — |
 | [nextjs-github-pages-deploy（Next.js 部署 GitHub Pages）](skills/nextjs-github-pages-deploy) | Deploy a Next.js project site with correct subpaths and optional Vercel dual deployment | — |
-| [vercel-deploy-triage（Vercel 部署故障诊断）](skills/vercel-deploy-triage) | Diagnose blocked deployments, commit-author checks, and stale live versions | — |
 
 ## 📦 Install
 
@@ -81,24 +80,6 @@ The Pages site is blank. Check basePath, routes, and asset paths.
 ```
 
 → [Open skill](skills/nextjs-github-pages-deploy/SKILL.en.md)
-
-### 🧰 vercel-deploy-triage（Vercel 部署故障诊断）
-
-> A successful deployment command does not prove that the live site has updated.
-
-It reads deployment state, the full error, commit, and production domain to distinguish build failures, Git author permissions, deployment targets, and cache problems. It starts with read-only checks and does not make a repository public, change team permissions, or redeploy blindly.
-
-**Best for**: Blocked or skipped Vercel deployments, a stale live site, or Git integration failing to recognize a commit author. Routine page changes do not need this diagnostic skill.
-
-**How to trigger it**
-
-```text
-The Vercel deployment says BLOCKED. Find the cause first.
-The deploy command succeeded, but the live site is old. Check the production deployment.
-GitHub says the commit author cannot be linked to an account. Find where the Vercel integration is stuck.
-```
-
-→ [Open skill](skills/vercel-deploy-triage/SKILL.en.md)
 
 ## About
 

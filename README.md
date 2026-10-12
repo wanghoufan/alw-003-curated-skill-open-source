@@ -13,7 +13,6 @@
 | [github-project-showcase（GitHub 项目展示同步）](skills/github-project-showcase) | 同步一个项目的仓库、个人主页与作品集展示 | — |
 | [github-readme-maintainer（GitHub README 维护）](skills/github-readme-maintainer) | 写好 README、真实产品截图、About 和双语 Release 说明 | — |
 | [nextjs-github-pages-deploy（Next.js 部署 GitHub Pages）](skills/nextjs-github-pages-deploy) | 部署 Next.js 项目页，处理子路径和 Vercel 双线发布 | — |
-| [vercel-deploy-triage（Vercel 部署故障诊断）](skills/vercel-deploy-triage) | 排查部署受阻、提交作者校验和线上版本未更新 | — |
 
 ## 📦 怎么安装
 
@@ -81,24 +80,6 @@ Pages 上白屏了，帮我检查 basePath、路由和资源路径。
 ```
 
 → [打开 Skill](skills/nextjs-github-pages-deploy/SKILL.md)
-
-### 🧰 vercel-deploy-triage（Vercel 部署故障诊断）
-
-> 部署显示成功，不等于线上已经是最新版本。
-
-它先读取部署状态、错误原文、commit 和生产域名，区分构建失败、Git 作者权限、部署目标和缓存问题，再提出影响最小的修复。初始排查只读，不会默认公开仓库、改团队权限或重复部署碰运气。
-
-**适合**：Vercel 部署被阻止或跳过、线上仍是旧版本、Git 集成无法识别提交作者。一般页面改动和部署配置工作不需要这项诊断 Skill。
-
-**怎么触发**
-
-```text
-Vercel 部署显示 BLOCKED，帮我先查清原因。
-部署命令成功了，但线上还是旧版本，帮我核对生产部署。
-GitHub 提示提交作者无法关联到账号，检查 Vercel 集成哪里卡住了。
-```
-
-→ [打开 Skill](skills/vercel-deploy-triage/SKILL.md)
 
 ## 关于
 
