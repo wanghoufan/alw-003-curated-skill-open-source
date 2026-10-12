@@ -1,46 +1,87 @@
-# 精选 Skill 仓库
+# 精选 Skill
 
-[English](README.en.md)
+中文 · [English](README.en.md)
 
-把经过真实项目反复使用的 AI Skill 整理成清楚、可迁移、方便检查的工具。
+#### 把真实项目里反复验证过的 AI 工作方法，整理成别人也看得懂、用得上的 Skill。
 
-> **当前状态：私有预览。** 本仓库正在整理首个候选 Skill。公开范围、再分发许可和跨智能体安装说明完成核验后，再决定是否开放。
+这里不是把 Skill 攒在一起就算完成。每个入选项都要有明确用途、真实项目经验、可以照着走的步骤和清楚的安全边界。当前先以私有仓库整理与检查，许可证和公开范围确认后再开放。
 
-## 这里收录什么
+本仓库里的 Skill 采用 `SKILL.md` 结构，可供支持 Agent Skills 的工具读取；每个工具的具体安装方法取决于使用的智能体和它是否有权访问本私有仓库。
 
-这里只放经过筛选、对其他开发者也有帮助的 Skill。每项都应说明它解决什么问题、需要什么工具、怎样使用，以及已知限制。个人账号信息、机器路径、内部管理流程和项目私密资料不属于公开版本。
+---
 
-## 首个候选：GitHub 项目展示同步
+## 📋 目录
 
-**`github-project-showcase`** 帮助项目维护者把一个已完成阶段的作品，准确地同步到 GitHub 仓库、GitHub 个人主页和作品集网站等展示位置。
+| 名称 | 一句话 | 说明 |
+|---|---|---|
+| [github-project-showcase](skills/github-project-showcase/SKILL.md)（GitHub 项目展示同步） | 帮你把一个项目的 GitHub 仓库、个人主页或作品集介绍整理准确、链接验通、截图过隐私检查 | [使用说明](skills/github-project-showcase/SKILL.md) |
 
-它会先核对仓库和链接的真实状态，再检查截图隐私与文案依据，按需更新用户指定的展示位置，最后验证页面、图片和部署结果。个人主页与作品集网站都是可选目标；不会假设你使用某个特定账号、网站或管理工具。
+---
 
-适合：开发者、独立创作者，以及需要维护多个项目展示入口的人。
+## 📦 安装与使用
 
-### 当前文件
+本仓库目前是 **Private**。只有拥有仓库读取权限、且能访问 GitHub 的智能体，才能从这里读取 Skill。
 
-- [Skill 使用说明](skills/github-project-showcase/SKILL.md)
-- [同步流程参考](skills/github-project-showcase/sync-flows.md)
-- [截图与隐私规则](skills/github-project-showcase/cover-rules.md)
-- [链接检查参考](skills/github-project-showcase/link-audit.md)
-- [交付检查清单](skills/github-project-showcase/checklist.md)
+在支持读取 GitHub Skill 的智能体中，可以这样提出安装请求：
 
-### 使用前提
+```text
+请读取并安装这个 Skill：
+https://github.com/wanghoufan/alw-003-curated-skill-open-source/tree/main/skills/github-project-showcase
+```
 
-- 按任务需要安装并登录 GitHub CLI `gh`。
-- 若要改个人主页或作品集网站，先提供对应仓库或内容源；本 Skill 不会猜测网站位置。
-- 写入远端、提交或推送之前，先确认本次任务明确包含这些操作。
-- 使用者应检查目标仓库的许可证、截图授权和公开范围。
+也可以先克隆仓库，再按照所用智能体的 Skill 安装说明，将 `skills/github-project-showcase/` 整个目录安装到对应位置。目录中的参考文件需和 `SKILL.md` 放在一起。
 
-### 安装说明
+如果智能体无法访问私有仓库，先为它配置 GitHub 读取权限；不要把整个仓库或访问令牌贴进对话。仓库未来公开后，会补充各客户端实际验证过的安装命令。
 
-本仓库仍处于私有预览阶段，暂不提供面向公众的安装命令。公开前会补充经过实测的 Codex、Claude Code、OpenCode 等客户端安装说明与最小使用示例。
+---
 
-## 收录标准
+## ✨ Skills
 
-入选 Skill 需要有真实使用依据、清楚的触发场景、可执行的步骤和明确的安全边界；能在不同项目复用；不依赖作者的私人目录或账号。第三方来源内容必须先核实许可证与署名要求。
+### 🧭 github-project-showcase（GitHub 项目展示同步）
 
-## 许可
+> 一个项目做完了，仓库、个人主页和作品集上的介绍也应该跟着对齐。
 
-许可证尚未确定。本仓库目前为私有预览；在许可证和再分发范围明确前，请勿复制或转发其中的 Skill。
+它帮助你把**一个指定项目**整理到对外展示的位置。先查看真实项目和 GitHub 当前状态，再核对介绍有没有事实依据、链接能不能打开、截图是否泄露隐私；之后只改你点名的展示位置，并回读或打开页面验证结果。
+
+#### 它能帮你做什么
+
+- 整理项目仓库 README、About 简介和相关链接。
+- 将项目加入 GitHub 个人主页 README，或修正已有条目。
+- 更新作品集网站中的项目介绍、链接和截图。
+- 检查 GitHub Pages、Vercel、Release 与图片链接是否真实可用。
+- 检查截图和文案中的个人信息、设备标识、密钥及第三方素材授权。
+
+个人主页和作品集是**可选目标**；只更新用户指定的位置，不会猜测账号、网站仓库或内容文件在哪里。它不做全账号盘点，也不接管项目管理。
+
+#### 什么时候用
+
+```text
+这个项目准备收尾了，帮我把仓库介绍和作品集条目对齐。
+检查这个 GitHub 仓库的 README、主页链接和截图是否适合展示。
+把这个项目加到我的 GitHub 个人主页 README，先检查有没有重复。
+```
+
+#### 使用前提与边界
+
+- 需要检查 GitHub 时使用已登录的 GitHub CLI `gh`；个人主页或作品集目标必须由使用者提供或明确指定。
+- 不把私有项目列入公开页面；不把第三方、fork 或模板作品说成原创。
+- 远端编辑、提交、推送、发版或部署只在用户明确要求时执行。
+- 没有真实且安全的产品截图时宁可不放，不用 Logo、概念图或装饰图代替。
+
+#### 文件
+
+- [SKILL.md](skills/github-project-showcase/SKILL.md)：主流程和行为边界
+- [sync-flows.md](skills/github-project-showcase/sync-flows.md)：不同展示位置的同步步骤
+- [cover-rules.md](skills/github-project-showcase/cover-rules.md)：截图选择与隐私检查
+- [link-audit.md](skills/github-project-showcase/link-audit.md)：仓库、网站与 Release 链接核验
+- [checklist.md](skills/github-project-showcase/checklist.md)：交付前验收清单
+
+---
+
+## 🌱 收录原则
+
+优先收录在真实项目中反复用过、能解决具体问题、又不依赖作者私人环境的 Skill。每项会标清用途、前置条件、限制和来源；第三方内容先确认许可证与署名要求。个人账号信息、机器路径、内部管理流程和私密项目数据不会进入可公开版本。
+
+## 关于与许可
+
+这是一个个人维护的精选集，目前处于私有整理阶段。许可证尚未确定；在许可证和再分发范围明确前，请勿复制或转发其中的 Skill。欢迎先在私有仓库中检查内容和使用方式。

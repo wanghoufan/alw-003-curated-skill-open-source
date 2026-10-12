@@ -1,46 +1,87 @@
 # Curated Skills
 
-[简体中文](README.md)
+[简体中文](README.md) · English
 
-Practical AI skills refined through real projects, documented so others can understand and adapt them.
+#### Practical AI workflows, refined through real projects and documented for others to use.
 
-> **Status: private preview.** The first candidate skill is being prepared. Public scope, redistribution terms, and cross-agent installation instructions will be reviewed before any public release.
+This is more than a folder of prompts. Every selected skill should solve a clear problem, come from real project use, provide actionable steps, and state its safety boundaries. The repository is private while its contents are being reviewed. Licensing and public release scope have not been decided.
 
-## What belongs here
+Skills use the `SKILL.md` format and can be read by tools that support Agent Skills. Installation depends on the agent and whether it has access to this private repository.
 
-This repository is for skills that solve recurring problems and can help developers beyond their original author. Each entry should explain its purpose, required tools, usage, and known limitations. Personal account details, machine-specific paths, internal administration procedures, and private project data do not belong in a public edition.
+---
 
-## First candidate: GitHub project showcase sync
+## 📋 Contents
 
-**`github-project-showcase`** helps maintainers keep a completed project's presentation consistent across its GitHub repository, GitHub profile, and portfolio site.
+| Name | In one sentence | Guide |
+|---|---|---|
+| [github-project-showcase](skills/github-project-showcase/SKILL.md) (GitHub Project Showcase Sync) | Keep a project's GitHub repository, profile entry, and portfolio listing accurate, verified, and privacy-safe. | [Instructions](skills/github-project-showcase/SKILL.md) |
 
-It first verifies repository and link status, checks screenshots for privacy issues and claims against their sources, updates only the presentation targets specified by the user, and then verifies pages, images, and deployment results. A profile README and portfolio site are optional targets; the skill does not assume a particular account, website, or management tool.
+---
 
-Useful for developers, independent makers, and anyone maintaining presentation pages for multiple projects.
+## 📦 Install and use
 
-### Files
+This repository is currently **Private**. An agent can read a skill here only if its user has repository access and the agent can reach GitHub.
 
-- [Skill instructions](skills/github-project-showcase/SKILL.md)
-- [Synchronization workflow](skills/github-project-showcase/sync-flows.md)
-- [Screenshot and privacy rules](skills/github-project-showcase/cover-rules.md)
-- [Link audit reference](skills/github-project-showcase/link-audit.md)
-- [Delivery checklist](skills/github-project-showcase/checklist.md)
+In an agent that can read GitHub-hosted skills, you can ask:
 
-### Requirements
+```text
+Please read and install this skill:
+https://github.com/wanghoufan/alw-003-curated-skill-open-source/tree/main/skills/github-project-showcase
+```
 
-- Install and authenticate GitHub CLI `gh` when the task requires it.
-- To update a profile README or portfolio site, provide the relevant repository or content source. The skill will not guess its location.
-- Confirm that the task includes any remote write, commit, or push before performing it.
-- Check the target repository's license, screenshot permissions, and publication scope.
+Alternatively, clone the repository and install the entire `skills/github-project-showcase/` directory using your agent's instructions. Keep its reference files alongside `SKILL.md`.
 
-### Installation
+If the agent cannot access the private repository, configure read access first. Do not paste the whole repository or an access token into a conversation. Client-specific commands will be added after they are tested against the public release.
 
-This repository is currently a private preview, so public installation instructions are not available yet. Before a public release, tested instructions and a minimal example will be added for clients such as Codex, Claude Code, and OpenCode.
+---
 
-## Selection criteria
+## ✨ Skills
 
-A selected skill must be grounded in real use, have clear triggers, actionable steps, and explicit safety boundaries. It should work across projects without depending on the author's private folders or accounts. Third-party content requires license and attribution checks before redistribution.
+### 🧭 github-project-showcase
 
-## License
+> When a project is ready, its repository, profile, and portfolio descriptions should be in sync too.
 
-No license has been selected. This repository is a private preview. Do not copy or redistribute its skills until licensing and redistribution terms are stated.
+This skill helps prepare **one named project** for presentation. It checks the real project and current GitHub state, verifies that claims have evidence, tests links, and reviews screenshots for privacy. It then changes only the destinations requested by the user and reads back or opens the result for verification.
+
+#### What it can do
+
+- Improve a project repository's README, About description, and relevant links.
+- Add or update a project entry in a GitHub profile README.
+- Update a project description, links, or screenshots on a portfolio site.
+- Verify GitHub Pages, Vercel, release, and image links.
+- Review screenshots and copy for personal data, device identifiers, credentials, and third-party asset rights.
+
+A profile README and portfolio site are **optional**. The skill changes only destinations named by the user; it does not guess account details, website repositories, or content file locations. It does not audit an entire account or manage projects.
+
+#### When to use it
+
+```text
+This project is wrapping up. Sync its repository description and portfolio entry.
+Check whether this GitHub repository's README, links, and screenshots are ready to show.
+Add this project to my GitHub profile README, checking for duplicates first.
+```
+
+#### Requirements and boundaries
+
+- Use an authenticated GitHub CLI `gh` when GitHub checks are needed. The user must provide or identify the profile or portfolio destination.
+- Never list a private project on a public page or present a fork, template, or third-party project as original work.
+- Perform remote edits, commits, pushes, releases, or deployments only when explicitly requested.
+- If no genuine and safe product screenshot is available, omit it; do not substitute a logo, concept image, or decoration.
+
+#### Files
+
+- [SKILL.md](skills/github-project-showcase/SKILL.md): workflow and behavior boundaries
+- [sync-flows.md](skills/github-project-showcase/sync-flows.md): destination-specific steps
+- [cover-rules.md](skills/github-project-showcase/cover-rules.md): screenshot selection and privacy review
+- [link-audit.md](skills/github-project-showcase/link-audit.md): repository, website, and release link checks
+- [checklist.md](skills/github-project-showcase/checklist.md): delivery checklist
+
+---
+
+## 🌱 Selection principles
+
+We prioritize skills that solve recurring problems, have been used in real projects, and do not depend on their author's private environment. Each entry should state its purpose, prerequisites, limitations, and source. Third-party content requires license and attribution checks. Personal account details, local paths, internal administration procedures, and private project data do not belong in a public edition.
+
+## About and license
+
+This is a personally maintained collection in private review. No license has been selected. Do not copy or redistribute its skills until licensing and redistribution terms are stated.
