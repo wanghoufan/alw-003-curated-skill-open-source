@@ -4,7 +4,7 @@
 
 #### AI skills selected, refined, and used in real projects.
 
-Each skill has been tried on a concrete task before being adapted into instructions others can understand and use. This repository is **Private** and continues to be curated.
+Each skill has been tried on a concrete task before being adapted into instructions others can understand and use. This repository is now **Public** and continues to be curated.
 
 ---
 
@@ -27,7 +27,7 @@ Please read and install this skill:
 https://github.com/wanghoufan/alw-003-curated-skill-open-source/tree/main/skills/github-readme-maintainer
 ```
 
-Replace the folder name with the skill you want. Because this repository is private, the GitHub identity used by the agent must have read access. You can also clone the repository and install the skill folder according to your agent's instructions.
+Replace the folder name with the skill you want. This repository is public, so the GitHub identity used by the agent needs no extra read access. You can also clone the repository and install the skill folder according to your agent's instructions.
 
 ---
 
@@ -107,4 +107,4 @@ The Pages site is blank. Check basePath, routes, and asset paths.
 
 ## About
 
-This is a personally maintained collection. The repository is private and has no license yet. Before any public release, each skill will be reviewed for scope, privacy, and redistribution rights.
+This is a personally maintained collection. The repository is public and has no license yet; the scope and redistribution terms of each skill will keep being reviewed.
