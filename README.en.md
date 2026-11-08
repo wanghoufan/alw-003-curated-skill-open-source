@@ -1,6 +1,6 @@
-# Curated Skills
-
 [简体中文](README.md) · English
+
+# Curated Skills
 
 #### AI skills selected, refined, and used in real projects.
 
@@ -18,7 +18,7 @@ Each skill has been tried on a concrete task before being adapted into instructi
 
 ---
 
-## 📦 Install
+## 📦 Installation
 
 In an agent that supports `SKILL.md`, ask it to install the skill and provide the matching folder URL. For example:
 

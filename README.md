@@ -1,6 +1,6 @@
-# 精选 Skill
-
 中文 · [English](README.en.md)
+
+# 精选 Skill
 
 #### 我从真实项目里挑出、整理并实际用过的 AI Skill。
 
